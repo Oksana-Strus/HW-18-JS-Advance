@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="row">
+    <div class="card col-3 mx-5 mb-4" *ngFor="let disc of userDiscounts">
+      <img [src]="disc.image" class="card-img-top">
+      <div class="card-body text-center">
+        <p class="blue-header">{{disc.date  |date:'MMM d, y' |uppercase}} {{disc.author | uppercase}}</p>
+        <h4 class="card-title mb-5">{{disc.title}}</h4>
+        <p class="card-title mb-5">{{disc.text}}</p>
+      </div>
+    </div>
+  </div>
+</div>

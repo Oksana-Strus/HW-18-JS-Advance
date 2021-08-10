@@ -1,0 +1,46 @@
+<form [formGroup]="discountForm" (ngSubmit)="createDiscount()">
+  <div class="mb-3">
+    <input type="text" formControlName="title" placeholder="title here..." class="form-control" id="title">
+  </div>
+  <div class="mb-3">
+    <textarea placeholder="text here..." formControlName="text" id="text" cols="30" rows="3"
+      class="form-control"></textarea>
+  </div>
+  <div class="mb-3">
+    <input type="text" formControlName="author" placeholder="author here..." class="form-control" id="author">
+  </div>
+  <button [disabled]="discountForm.invalid" *ngIf="!isEdit" (click)="createDiscount()" type="submit"
+    class="btn btn-color-add">Add</button>
+  <button [disabled]="discountForm.invalid" *ngIf="isEdit" (click)="updateDiscount()" type="submit"
+    class="btn btn-color-add">Save edit</button>
+
+</form>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Text</th>
+      <th scope="col">Date</th>
+      <th scope="col">Author</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="align-middle" *ngFor="let disc of adminDiscounts; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ disc.title }}</td>
+      <td>{{ disc.text | slice:0:50 }}...</td>
+      <td>{{ disc.date | date:'MMM d, y'}}</td>
+      <td>{{ disc.author }}</td>
+      <td>
+        <button class="btn btn-color me-3" (click)="editDiscount(disc)">Edit</button>
+      </td>
+      <td>
+        <button class="btn btn-color w-100" (click)="deleteDiscount(disc)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

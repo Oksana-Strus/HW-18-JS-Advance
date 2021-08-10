@@ -1,0 +1,14 @@
+<div class="container-fluid mt-3 mb-3">
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" style="width: 15%;">
+        <button class="nav-link nav-link-color" type="button" [routerLink]="[ 'adminCategory' ]"
+          routerLinkActive="active">Category</button>
+        <button class="nav-link" type="button" [routerLink]="[ 'adminProducts' ]"
+          routerLinkActive="active">Products</button>
+        <button class="nav-link" type="button" [routerLink]="[ 'adminBlogs' ]" routerLinkActive="active">Blogs</button>
+      </div>
+      <div class="tab-content" style="width: 100%;">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>

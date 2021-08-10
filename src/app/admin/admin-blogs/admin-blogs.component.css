@@ -1,0 +1,14 @@
+.btn-color{
+    background-color: rgb(54, 54, 54);
+    width: 40%;
+    height: 30%;
+    font-size: 20px;
+    color: white;
+}
+
+.btn-color-add{
+    background-color: rgb(54, 54, 54);
+    height: 30%;
+    font-size: 20px;
+    color: white; 
+}

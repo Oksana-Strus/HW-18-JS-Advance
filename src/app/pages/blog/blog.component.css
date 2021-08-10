@@ -1,0 +1,19 @@
+.blue-header {
+  color: rgb(0, 153, 255);
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.card{
+    width: 40%;
+}

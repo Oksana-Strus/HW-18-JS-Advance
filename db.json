@@ -1,0 +1,44 @@
+{
+  "discounts": [
+    {
+      "title": "ііі",
+      "text": "фф",
+      "author": "ффф",
+      "image": "https://pizzaletta.com/storage/2019/10/gallery_3.jpg",
+      "date": "2021-07-27T19:07:12.504Z",
+      "id": 3
+    },
+    {
+      "title": "12",
+      "text": "12",
+      "author": "12",
+      "image": "https://pizzaletta.com/storage/2019/10/gallery_3.jpg",
+      "date": "2021-07-27T19:31:41.901Z",
+      "id": 4
+    },
+    {
+      "title": "dsadas",
+      "text": "ddd",
+      "author": "вввв",
+      "image": "https://pizzaletta.com/storage/2019/10/gallery_3.jpg",
+      "date": "2021-08-10T10:18:35.200Z",
+      "id": 5
+    },
+    {
+      "title": "папаппа",
+      "text": "dd",
+      "author": "oksana",
+      "image": "https://pizzaletta.com/storage/2019/10/gallery_3.jpg",
+      "date": "2021-08-10T14:56:47.375Z",
+      "id": 6
+    },
+    {
+      "title": "ввв",
+      "text": "ss",
+      "author": "ss",
+      "image": "https://pizzaletta.com/storage/2019/10/gallery_3.jpg",
+      "date": "2021-08-10T15:03:43.733Z",
+      "id": 7
+    }
+  ]
+}
